@@ -9,7 +9,7 @@
 
 ## Step 1 — Fill your credentials (one file)
 
-Open **`ROLL_NUMBER/.env`** and set these 6 values:
+Open **`backend/.env`** and set these 6 values:
 
 ```env
 EMAIL=your.email@college.edu
@@ -36,7 +36,7 @@ npm run install:all
 Or:
 
 ```powershell
-cd E:\afford\ROLL_NUMBER
+cd E:\afford\backend
 npm install
 npm run install:all
 ```

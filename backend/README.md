@@ -9,7 +9,7 @@ Welcome to the backend microservice assessment! This project contains two primar
 ## Quick Setup Guide
 
 ### 1. Configure Your Credentials
-Open the `.env` file located in this `ROLL_NUMBER/` folder and fill in your details:
+Open the `.env` file located in this `backend/` folder and fill in your details:
 ```env
 EMAIL=your.email@college.edu
 NAME=Your Full Name
@@ -21,7 +21,7 @@ ACCESS_CODE=code_from_portal
 *(Leave `CLIENT_ID` and `CLIENT_SECRET` empty — the setup script will fill them in for you).*
 
 ### 2. Install Dependencies & Register
-Run the following commands in your terminal from the `ROLL_NUMBER/` directory to install packages and register your client with the evaluation API:
+Run the following commands in your terminal from the `backend/` directory to install packages and register your client with the evaluation API:
 ```powershell
 npm install
 npm run install:all

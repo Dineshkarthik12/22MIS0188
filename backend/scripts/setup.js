@@ -47,7 +47,7 @@ const syncEnvFiles = () => {
       fs.copyFileSync(example, ROOT_ENV);
       console.log('Created .env from .env.example — please fill in your credentials.');
     } else {
-      throw new Error('Missing .env file. Create ROLL_NUMBER/.env with your evaluation credentials.');
+      throw new Error('Missing .env file. Create backend/.env with your evaluation credentials.');
     }
   }
 
@@ -63,7 +63,7 @@ const validateCredentials = () => {
   const missing = REQUIRED_FIELDS.filter((key) => !process.env[key] || process.env[key].includes('your.'));
   if (missing.length > 0) {
     throw new Error(
-      `Edit ROLL_NUMBER/.env and set: ${missing.join(', ')}\nGet these from your evaluation portal.`
+      `Edit backend/.env and set: ${missing.join(', ')}\nGet these from your evaluation portal.`
     );
   }
 };
