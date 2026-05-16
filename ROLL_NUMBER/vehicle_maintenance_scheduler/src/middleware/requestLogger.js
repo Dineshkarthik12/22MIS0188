@@ -8,11 +8,11 @@ const requestLogger = async (req, res, next) => {
     await safeLog(
       'info',
       'route',
-      `${req.method} ${req.originalUrl} responded with status ${res.statusCode} in ${duration}ms`
+      `${req.method} ${req.originalUrl} completed with status ${res.statusCode} in ${duration}ms`
     );
   });
 
-  await safeLog('info', 'route', `Incoming ${req.method} request to ${req.originalUrl}`);
+  await safeLog('info', 'route', `Incoming ${req.method} request received at ${req.originalUrl}`);
   next();
 };
 

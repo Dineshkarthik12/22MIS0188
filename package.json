@@ -1,16 +1,12 @@
 {
-  "dependencies": {
-    "express": "^5.2.1"
-  },
   "name": "afford",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "private": true,
+  "description": "Backend assessment — run scripts from here or from ROLL_NUMBER/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "install:all": "npm install --prefix ROLL_NUMBER && npm run install:all --prefix ROLL_NUMBER",
+    "setup": "npm run setup --prefix ROLL_NUMBER",
+    "register": "npm run setup --prefix ROLL_NUMBER",
+    "dev": "npm run dev --prefix ROLL_NUMBER"
+  }
 }

@@ -7,12 +7,17 @@
     "dev": "nodemon scripts/register.js",
     "register": "node scripts/register.js"
   },
-  "keywords": ["logging", "middleware", "evaluation"],
+  "keywords": [
+    "logging",
+    "middleware",
+    "evaluation"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.9",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "roll-number-assessment": "file:.."
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

@@ -1,0 +1,15 @@
+{
+  "name": "roll-number-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "install:all": "npm install --prefix logging_middleware && npm install --prefix vehicle_maintenance_scheduler",
+    "register": "npm run setup",
+    "dev": "npm run dev --prefix vehicle_maintenance_scheduler"
+  },
+  "dependencies": {
+    "afford": "file:..",
+    "dotenv": "^16.4.7"
+  }
+}

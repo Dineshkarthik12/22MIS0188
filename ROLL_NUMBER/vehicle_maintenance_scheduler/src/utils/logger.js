@@ -4,7 +4,7 @@ const safeLog = async (level, packageName, message) => {
   try {
     await Log('backend', level, packageName, message);
   } catch (error) {
-    console.error(`[Logger] Remote log failed: ${error.message}`);
+    // Remote logging must not crash business logic; no console output per requirements
   }
 };
 

@@ -5,7 +5,7 @@ const notFoundHandler = async (req, res) => {
   await safeLog(
     'warn',
     'route',
-    `No route handler found for ${req.method} ${req.originalUrl}`
+    `No route handler registered for ${req.method} ${req.originalUrl}`
   );
   return sendError(res, 404, `Route not found: ${req.method} ${req.originalUrl}`);
 };

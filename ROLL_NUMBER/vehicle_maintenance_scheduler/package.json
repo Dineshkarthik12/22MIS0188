@@ -1,13 +1,18 @@
 {
   "name": "vehicle_maintenance_scheduler",
-  "version": "1.0.0",
-  "description": "REST API for vehicle maintenance scheduling with remote logging",
+  "version": "2.0.0",
+  "description": "Knapsack-based vehicle maintenance scheduler microservice with priority inbox",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": ["vehicle", "maintenance", "express"],
+  "keywords": [
+    "knapsack",
+    "scheduler",
+    "express",
+    "maintenance"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -15,7 +20,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "logging_middleware": "file:../logging_middleware",
-    "uuid": "^11.0.5"
+    "roll-number-assessment": "file:.."
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
